@@ -1,0 +1,29 @@
+img {
+    height: 500px;
+    border-radius: 20px;
+}
+
+.subtitulo-1 {
+    color: #03045e;
+    font-size: 35px;
+}
+
+.subtitulo-2 {
+    color: #03045e;
+    font-size: 30px;
+}
+
+.habilidades, .redes {
+    font-size: 25px;
+    color: #14213d;
+}
+
+a {
+    color: #14213d;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #5f0f40;
+    text-decoration: underline;
+}
