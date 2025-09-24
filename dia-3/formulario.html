@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./formulario.css">
+    <title>formulario</title>
+</head>
+<body>
+    <h1>Formulario para Noches de Hogar</h1>
+    
+    <form action="" id="formulario">
+        <h3>Datos de la Familia</h3>
+        <div id="info">
+            <label for="familia">Apellidos:</label>
+            <input type="text" id="familia" placeholder="Juarez Mendoza" /> 
+            <label for="miembros">No. de Miembros:</label>
+            <input type="number" 
+                id="miembros" 
+                placeholder="Max 20" 
+                min="1" max="20"
+            /> 
+        </div>
+
+        <div id="calling">
+            <label for="">Llamamiento:</label>
+            <select id="llamamiento">
+                <option value="">Obispo</option>
+                <option value="">Presidenta de Primaria</option>
+                <option value="">Representante JAS</option>
+                <option value="">Presidenta de MJ</option>
+            </select>
+        </div>
+        
+        <h3>Datos de la cita</h3>
+        <div id="cita">
+            <label for="fecha">Fecha:</label>
+            <input type="date" id="date" />
+            <label for="hora">hora:</label>
+            <input type="time" id="hora" />
+        </div>
+    <img 
+        src="https://www.lds.org/bc/content/shared/content/images/gospel-library/manual/08861/sheep-jesus-parson-parable-christ_1173249_inl.jpg"
+        alt="jesucristo cargando una oveja">
+    <button>Enviar</button>
+    </form>
+</body>
+</html>

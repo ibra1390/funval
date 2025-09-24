@@ -1,0 +1,51 @@
+ * { /*eliminar espacios del navegador*/
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+ }
+
+/* #formulario {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+}
+
+ */
+
+ body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ }
+
+ #contenedor {
+    background-color: red;
+    display: flex;
+    /* padding: 10px; espacio entre sus hijos y su contenido interior */
+    /* padding: 10px 20px 30px 40px; manecillas del reloj */
+    gap: 10px;
+    padding: 10px;
+    flex-direction: column;
+ }
+
+ .contenedor-caja12 {
+    display: flex;
+    gap: 10px;
+ }
+
+ .caja {
+    background: blue;
+    color: white;
+    height: 100px;
+    width: 100px;
+    /* margin: 10px; */
+ }
+
+ .caja3 {
+    background-color: blue;
+    color: white;
+    height: 100px;
+ }

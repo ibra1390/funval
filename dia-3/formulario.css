@@ -1,0 +1,58 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    height: 100vh;
+    justify-content: center;
+}
+
+#formulario {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    background-color: beige;
+    padding: 50px;
+    border-radius: 20px;
+    border: 2px solid lightblue;
+}
+
+#info {
+    display: flex;
+    gap: 10px;
+}
+
+#calling {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+#cita {
+    display: flex;
+    gap: 10px;
+}
+
+img, input, select {
+    border: 2px solid lightblue;
+    border-radius: 8px;
+}
+
+img {
+    width: 200px;
+}
+
+button {
+    background-color: lightblue;
+    padding: 10px;
+    border-radius: 5px;
+}
