@@ -1,0 +1,71 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* .divsito {
+    border: 2px solid red;
+}
+
+.spansito {
+    border: 2px solid blue;
+    font-weight: bold;
+    color: red;
+}
+
+.seccion {
+    border: 2px solid black;
+}
+
+.noticia {
+    border: 2px solid red;
+}
+
+.menu {
+    display: flex;
+    border: 2px solid red;
+}
+ */
+
+body {
+    height: 100vh;
+    color: white;
+}
+
+.cabecera {
+    background-color: red;
+    
+    height: 10%;
+}
+
+.nave {
+    background-color: blue;
+    height: 10%;
+}
+
+.contenedor {
+    height: 70%;
+    display: flex;
+}
+
+.asi {
+    background-color: violet;
+    width: 30%;
+}
+
+.principal {
+    background-color: brown;
+    width: 70%;
+}
+
+.pie {
+    height: 10%;
+    background-color: green;
+}
+
+.kevin {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
