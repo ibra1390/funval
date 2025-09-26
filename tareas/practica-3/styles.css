@@ -1,0 +1,104 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    font-family: sans-serif;
+}
+
+.encabezado {
+    color: white;
+    background-color: #4caf50;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    font-size: 35px;
+    font-weight: bold;
+    height: 10%;
+}
+
+
+#navegador {
+    background-color: #333333;
+    color: white;
+    height: 5%;
+}
+
+#navegador ul {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    padding: 15px;
+    list-style-type: none;
+    font-size: 15px;
+}
+
+main {
+    height: 75%;
+    display: flex;
+    flex-direction: column;
+}
+
+#hero-section {
+    background-color: #faebd7;
+    position: relative;
+    height: 400px;
+    font-size: 15px;
+}
+
+.hero-info {
+    padding: 30px 0 20px 15px;
+}
+
+#titulo {
+    padding: 50px 0 20px 15px;
+}
+
+.parrafo {
+    margin-top: 15px;
+
+}
+
+#logo {
+    height: 190px;
+    width: 190px;
+    position: absolute;
+    right: 40px;
+    top: 90px;
+}
+
+#btn {
+    background-color: #4caf50;
+    color: white;
+    border-radius: 5px;
+    padding: 10px;
+    border: none;
+    margin-top: 15px;
+}
+
+#title-section {
+    background-color: #f4f4f4;
+    height: 200px;
+    padding: 30px 0 30px 15px;
+    margin-bottom: 30px;
+    margin-left: 15px;
+    border: 2px solid #dcdcdc;
+    font-size: 15px;
+}
+
+#title-section ul {
+    padding: 20px 40px;
+}
+
+footer {
+    background-color: #333333;
+    color: white;
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+
