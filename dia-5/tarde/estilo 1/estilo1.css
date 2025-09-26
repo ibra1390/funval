@@ -1,0 +1,182 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* VALORES Q NO ESTEN EN MEDIA QURS SON CONSIDERADOS XS MOBILE FIRST */
+/* body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.caja {
+  height: 200px;
+  width: 200px;
+  background-color: brown;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+} */
+body {
+  height: 100vh;
+}
+header {
+  background-color: green;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 10%;
+}
+main {
+  height: 75%;
+  background-color: blanchedalmond;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 8px;
+}
+.number-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 8px;
+  height: 40%;
+}
+.numerito {
+  width: 45%;
+  height: 49%;
+  background-color: rgb(94, 94, 226);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.letter-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 8px;
+  height: 40%;
+}
+.letra {
+  width: 45%;
+  height: 49%;
+  background-color: rgb(182, 179, 179);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container-face {
+  height: 15%;
+  display: flex;
+}
+.smile1 {
+  background-color: orange;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+.smile2 {
+  background-color: orange;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  display: none; /* ocultar algo */
+}
+.mobile-container {
+  height: 20%;
+  background-color: rgb(4, 185, 158);
+  width: 90%;
+  margin-left: 5%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+footer {
+  display: none;
+}
+/* ESTA MEDIDA ES CONOCIDA CM SM EN EL MUNDO DEL DESARROLLO */
+@media (min-width: 640px) {
+  /* .caja {
+    background-color: blueviolet;
+    color: cyan;
+    font-size: 70px;
+  } */
+  .numerito {
+    width: 24%;
+    height: 95%;
+  }
+  .letra {
+    width: 24%;
+    height: 95%;
+  }
+  .number-container {
+    height: 33%;
+    order: 1;
+  }
+  .mobile-container {
+    height: 33%;
+    order: 2;
+  }
+  .letter-container {
+    height: 33%;
+    order: 3;
+  }
+  .container-face {
+    display: flex;
+    gap: 8px;
+  }
+  .smile1 {
+    width: 50%;
+  }
+  .smile2 {
+    display: flex;
+    width: 50%;
+  }
+  footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 10%;
+    background: green;
+  }
+}
+/* ESTA MEDIDA ES CONOCIDA CM MD EN EL MUNDO DEL DESARROLLO */
+@media (min-width: 768px) {
+  /* .caja {
+    background-color: bisque;
+    color: blue;
+    font-size: 30px;
+  } */
+}
+/* ESTA MEDIDA ES CONOCIDA CM LG EN EL MUNDO DEL DESARROLLO */
+@media (min-width: 1024px) {
+  /* .caja {
+    background-color: chartreuse;
+    color: red;
+    font-size: 40px;
+  } */
+}
+/* ESTA MEDIDA ES CONOCIDA CM XL EN EL MUNDO DEL DESARROLLO */
+@media (min-width: 1280px) {
+  /* .caja {
+    background-color: blue;
+    color: white;
+    font-size: 100px;
+  } */
+}
+/* ESTA MEDIDA ES CONOCIDA CM 2XL EN EL MUNDO DEL DESARROLLO */
+@media (min-width: 1536px) {
+  /*  .caja {
+    background-color: red;
+    color: white;
+    font-size: 150px;
+  } */
+}

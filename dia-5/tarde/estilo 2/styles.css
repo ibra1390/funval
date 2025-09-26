@@ -1,0 +1,140 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+}
+
+.encabezado {
+    height: 10%;
+    background-color: orange;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    border: 2px black solid;
+}
+
+.contenedor {
+    height: 40%;
+    margin-bottom: 30px;
+}
+
+.caja {
+    background-color: red;
+    display: flex;
+    margin-bottom: 20px;
+    font-size: 100px;
+    border: 2px black solid;
+    padding: 20px;
+}
+
+.caja1 {
+    display: flex;
+    align-items: center;
+}
+
+.caja2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: lightblue;
+}
+
+.caja3 {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+.pie {
+    background-color: yellow;
+    border: 2px black solid;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+
+.pie1 {
+    margin-bottom: 10px;
+}
+
+@media (min-width: 640px) {
+    
+    .encabezado {
+        background-color: lightblue;
+        justify-content: start;
+    }
+
+    .contenedor {
+        display: flex;
+       justify-content: space-between;
+       margin-bottom: 0;
+    }
+
+    .caja1 {
+        width: 49%;
+    }
+    .caja2 {
+        background-color: red;
+        justify-content: end;
+        width: 49%;
+    }
+
+    .caja3 {
+        justify-content: center;
+        background-color: greenyellow;
+    }
+
+}
+
+
+@media (min-width: 1024px) {
+
+    .encabezado {
+        background-color: greenyellow;
+    }
+
+    .contenedor-global {
+        display: flex;
+        gap: 20px;
+        width: 100%;
+        justify-content: center;
+    }
+
+    .contenedor {
+        gap: 20px;
+    }
+    
+    .caja {
+        width: 550px;
+        height: 600px;
+        
+    }
+    .footers {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .caja1, .caja2 {
+        justify-content: center;
+        align-items: center;
+    }
+    .caja3 {
+        background-color: red;
+    }
+    .pie {
+        width: 49%;
+
+    }
+    .pie1 {
+        margin-bottom: 0;
+    }
+
+
+}

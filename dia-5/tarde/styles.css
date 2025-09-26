@@ -4,6 +4,8 @@
     box-sizing: border-box;
 }
 
+/* VALORES QUE NO ESTEN EN MEDIA QUERIES SON CONSIDERADOS XS MOBILE FIRST */
+
 body {
     height: 100vh;
     display: flex;
