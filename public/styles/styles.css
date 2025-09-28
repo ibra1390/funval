@@ -1,0 +1,52 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    background-image: url("../images/persona5royal.jpg");
+    background-size: cover;      /* Ajusta la imagen al tamaño de la pantalla */
+    background-position: center; 
+    height: 100vh;
+    font-family: "Arial Black", Impact, sans-serif;
+}
+
+h1 {
+    margin-bottom: 10px;
+    text-decoration: underline;
+}
+
+.menu {
+  background: black; 
+  position: fixed;
+  top: 24px;
+  left: 24px;
+  padding: 40px 40px 25px;
+  color: white;
+  border: 3px solid white;
+  transform: rotate(-1.5deg);
+  box-shadow: 0 6px 0 black;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 4px 6px;
+    display: inline-block;
+}
+
+.menu a:hover {
+  background: white;
+  color: black; 
+  text-transform: uppercase;   
+}
+
+.menu ul {
+    list-style: none;
+}
+
+.menu li {
+    margin: 5px;
+}
