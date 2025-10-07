@@ -172,55 +172,55 @@ if (mes == 1) {
    Muestra "Positivo" si el número es mayor que 0.
 */
 // RESPUESTA AQUÍ 👇
-let num = parseInt(prompt("ingresa un numero"));
+/* let num = parseInt(prompt("ingresa un numero"));
 if (num > 0) {
     console.log("numero positivo")
 };
-
+ */
 /*
 2. Pide la edad del usuario.
    Si la edad es mayor o igual a 18, muestra "Eres mayor de edad".
 */
 // RESPUESTA AQUÍ 👇
-let edad = parseInt(prompt("ingresa tu edad"));
+/* let edad = parseInt(prompt("ingresa tu edad"));
 if (edad >= 18) {
     console.log("eres mayor de edad")
 } else {
     console.log("eres menor de edad")
-};
+}; */
 /*
 3. Pide un número y verifica si es par.
    Usa el operador % y un if.
 */
 // RESPUESTA AQUÍ 👇
-let num1 = parseInt(prompt("ingresa un numero"));
+/* let num1 = parseInt(prompt("ingresa un numero"));
 if (num1 % 2 === 0) {
     console.log("este es un numero impar")
 } else {
     console.log("este es un numero impar")
-};
+}; */
 /*
 4. Pide una contraseña con prompt.
    Si la contraseña es "admin123", muestra "Acceso permitido".
 */
 // RESPUESTA AQUÍ 👇
-let password = prompt("ingresa tu password");
+/* let password = prompt("ingresa tu password");
 if (password == "admin123") {
     console.log("Acceso permitido")
 } else {
     console.log("Acceso denegado")
-};
+}; */
 /*
 5. Pide un número.
    Si el número es igual a 100, muestra "Número exacto".
 */
 // RESPUESTA AQUÍ 👇
-let num2 = parseInt(prompt("ingresa un numero"));
+/* let num2 = parseInt(prompt("ingresa un numero"));
 if (num2 === 100) {
     console.log("Numero exacto")
 } else {
     console.log("Numero incorrecto")
-};
+}; */
 // =======================================================
 // IF - ELSE (EJERCICIOS 6 - 10)
 // =======================================================
@@ -230,57 +230,57 @@ if (num2 === 100) {
    Si es mayor que 50 muestra "Número alto", caso contrario "Número bajo".
 */
 // RESPUESTA AQUÍ 👇
-let num3 = parseInt(prompt("ingresa un numero de nuevo"));
+/* let num3 = parseInt(prompt("ingresa un numero de nuevo"));
 if (num3 > 50) {
     console.log("Numero alto")
 } else {
     console.log("Numero bajo")
-};
+}; */
 /*
 7. Pide la edad del usuario.
    Si es mayor o igual a 18 muestra "Bienvenido",
    caso contrario "Acceso denegado".
 */
 // RESPUESTA AQUÍ 👇
-let edad2 = parseInt(prompt("ingresa tu edad de nuevo"));
+/* let edad2 = parseInt(prompt("ingresa tu edad de nuevo"));
 if (edad2 >= 18) {
     console.log("Bienvenido")
 } else {
     console.log("Acceso denegado")
-};
+}; */
 /*
 8. Pide una nota entre 0 y 100.
    Si la nota es mayor o igual a 60 muestra "Aprobado", de lo contrario "Reprobado".
 */
 // RESPUESTA AQUÍ 👇
-let nota = parseInt(prompt("ingresa una nota entre 0 y 100"));
+/* let nota = parseInt(prompt("ingresa una nota entre 0 y 100"));
 if (nota >= 60) {
     console.log("Aprobado")
 } else {
     console.log("Reprobado")
-};
+}; */
 /*
 9. Pide un nombre.
    Si el nombre es "Kevin" muestra "Hola Kevin",
    de lo contrario "Hola invitado".
 */
 // RESPUESTA AQUÍ 👇
-let nombre3 = prompt("Ingresa tu nombre");
+/* let nombre3 = prompt("Ingresa tu nombre");
 if (nombre3 == "Kevin") {
     console.log("Hola Kevin")
 } else {
     console.log("Hola invitado")
-};
+}; */
 /*
 10. Pide un número y muestra si es par o impar usando if-else.
 */
 // RESPUESTA AQUÍ 👇
-let num4 = parseInt(prompt("ingresa un numero de nuevo"))
+/* let num4 = parseInt(prompt("ingresa un numero de nuevo"))
 if (num4 % 2 == 0) {
     console.log("numero par")
 } else {
     console.log("numero impar")
-};
+}; */
 // =======================================================
 // IF - ELSE IF (EJERCICIOS 11 - 15)
 // =======================================================
@@ -293,7 +293,7 @@ if (num4 % 2 == 0) {
    - "Insuficiente" si es menor a 50
 */
 // RESPUESTA AQUÍ 👇
-let nota1 = parseInt(prompt("ingresa una nota de 0 a 100"));
+/* let nota1 = parseInt(prompt("ingresa una nota de 0 a 100"));
 if (nota >= 90) {
     console.log("Excelente")
 } else if (nota >=70 && nota <=89) {
@@ -303,7 +303,7 @@ if (nota >= 90) {
 } else if (nota < 50) {
     console.log("Insuficiente")
 };
-
+ */
 /*
 12. Pide la temperatura (en grados Celsius).
    Muestra:
@@ -312,14 +312,14 @@ if (nota >= 90) {
    - "Caluroso" si es mayor a 25
 */
 // RESPUESTA AQUÍ 👇
-let temp = parseInt(prompt("Ingresa una temperatura"));
+/* let temp = parseInt(prompt("Ingresa una temperatura"));
 if (temp < 15) {
     console.log("Frio")
 } else if (temp >=15 && temp <=25) {
     console.log("Templado")
 } else if (temp > 25) {
     console.log("Caluroso")
-};
+}; */
 /*
 13. Pide una hora (0 a 23).
    Muestra:
@@ -329,7 +329,7 @@ if (temp < 15) {
    - "Durmiendo" si está entre 0 y 5
 */
 // RESPUESTA AQUÍ 👇
-let hora = parseInt(prompt("Ingresa una hora de 0 a 23"));
+/* let hora = parseInt(prompt("Ingresa una hora de 0 a 23"));
 if (hora >=6 && hora <=11) {
     console.log("Buenos dias")
 } else if (hora >=12 && hora <=18) {
@@ -338,12 +338,12 @@ if (hora >=6 && hora <=11) {
     console.log("buenas noches")
 } else if (hora >=0 && hora <=5) {
     console.log("Durmiendo")
-};
+}; */
 /*
 14. Pide un número del 1 al 3 y muestra un mensaje distinto para cada uno.
 */
 // RESPUESTA AQUÍ 👇
-let num5 = parseInt(prompt("Ingresa un numero del 1 al 3"))
+/* let num5 = parseInt(prompt("Ingresa un numero del 1 al 3"))
 if (num5 === 1) {
     console.log("Felicidades")
 } else if (num5 === 2) {
@@ -352,7 +352,7 @@ if (num5 === 1) {
     console.log("Por poco")
 } else {
     console.log("Mala suerte")
-};
+}; */
 /*
 15. Pide un número y muestra:
    - "Negativo" si es menor que 0
@@ -360,14 +360,14 @@ if (num5 === 1) {
    - "Positivo" si es mayor que 0
 */
 // RESPUESTA AQUÍ 👇
-let num6 = parseInt(prompt("Ingresa un numero"))
+/* let num6 = parseInt(prompt("Ingresa un numero"))
 if (num6 < 0) {
     console.log("Negativo")
 } else if (num6 === 0) {
     console.log("Cero")
 } else if (num6 > 0) {
     console.log("Positivo")
-}
+} */
 // =======================================================
 // IF ANIDADO (EJERCICIOS 16 - 20)
 // =======================================================
@@ -378,64 +378,64 @@ if (num6 < 0) {
    Dentro del mismo if, si es mayor o igual a 60 muestra "Adulto mayor".
 */
 // RESPUESTA AQUÍ 👇
-let edad3 = parseInt(prompt("Ingresa una edad"))
+/* let edad3 = parseInt(prompt("Ingresa una edad"))
 if (edad3 >= 18) {
     console.log("Mayor de edad")
     if (edad3 >= 60) {
         console.log("Adulto mayor");
     }
     
-}
+} */
 /*
 17. Pide una nota.
    Si es mayor o igual a 60 muestra "Aprobado".
    Dentro de ese if, si la nota es mayor o igual a 90 muestra "Excelente".
 */
 // RESPUESTA AQUÍ 👇
-let nota4 = parseInt(prompt("Ingresa una nota"))
+/* let nota4 = parseInt(prompt("Ingresa una nota"))
 if (nota4 >= 60) {
     console.log("Aprobado")
     if (nota4 >= 90) {
         console.log("Excelente")
     }
-};
+}; */
 /*
 18. Pide un número.
    Si es positivo, dentro del if verifica si es par o impar.
 */
 // RESPUESTA AQUÍ 👇
-let num7 = parseInt(prompt("ingresa un numero"))
+/* let num7 = parseInt(prompt("ingresa un numero"))
 if (num7 % 2 == 0) {
     console.log("Numero par")
     if (num7 % 2 != 0)
         console.log("Numero impar")
-};
+}; */
 /*
 19. Pide usuario y contraseña.
    Si usuario es "admin", dentro del mismo if verifica si la contraseña es "1234".
    Si ambos coinciden, muestra "Acceso concedido".
 */
 // RESPUESTA AQUÍ 👇
-let usuario = prompt("ingresa tu usuario")
+/* let usuario = prompt("ingresa tu usuario")
 let password2 = prompt("ingresa tu password")
 if (usuario == "admin") {
     if (password == "1234")
         console.log("Acceso concedido")
-};
+}; */
 /*
 20. Pide dos números.
    Si el primero es mayor, muestra "El primero es mayor".
    Dentro de ese if, verifica si la diferencia es mayor a 10 y muestra "Diferencia grande".
 */
 // RESPUESTA AQUÍ 👇
-let num8 = parseInt(prompt("ingresa un numero"))
+/* let num8 = parseInt(prompt("ingresa un numero"))
 let num9 = parseInt(prompt("ingresa un numero"))
 if (num8 > num9) {
     console.log("El primero es mayor")
     if ((num8 - num9) > 10) {
         console.log("Diferencia grande")
     }
-} 
+}  */
 // =======================================================
 // SWITCH CASE (EJERCICIOS 21 - 22)
 // =======================================================
@@ -445,7 +445,7 @@ if (num8 > num9) {
    1 = Lunes, 2 = Martes, ..., 7 = Domingo
 */
 // RESPUESTA AQUÍ 👇
-let numero3 = parseInt(prompt("Ingresa un numero del 1 al 7"))
+/* let numero3 = parseInt(prompt("Ingresa un numero del 1 al 7"))
 switch (numero3) {
     case 1:
         console.log("Lunes");
@@ -471,11 +471,11 @@ switch (numero3) {
     default:
         console.log("No reconocido");
         break;
-} 
+}  */
 /*
 22. Pide un número del 1 al 12 y muestra el mes correspondiente.
 */
-let mesillo = parseInt(prompt("Ingresa un numero del 1 al 12"))
+/* let mesillo = parseInt(prompt("Ingresa un numero del 1 al 12"))
 switch (mesillo) {
     case 1:
         console.log("Enero");
@@ -516,7 +516,7 @@ switch (mesillo) {
     default:
         console.log("Mes no reconocido");
         break;
-} 
+}  */
 // =======================================================
 // COMBINACIÓN DE TODOS LOS TEMAS (EJERCICIOS 23 - 35)
 // =======================================================
@@ -526,7 +526,13 @@ switch (mesillo) {
    Usa if-else para mostrar si su suma es par o impar.
 */
 // RESPUESTA AQUÍ 👇
-
+/* let no1 = parseInt(prompt("Ingresa un numero"))
+let no2 = parseInt(prompt("Ingresa otro numero"))
+if ((no1 + no2) % 2 == 0) {
+    console.log("la suma es un numero par")
+} else {
+     console.log("la suma es un numero impar")
+}; */
 /*
 24. Pide tres notas, calcula el promedio.
    Usa if-else-if para mostrar:
@@ -535,6 +541,17 @@ switch (mesillo) {
    - "Reprobado" si es menor a 60
 */
 // RESPUESTA AQUÍ 👇
+/* let note1 = parseInt(prompt("Ingresa una nota"))
+let note2 = parseInt(prompt("Ingresa segunda nota"))
+let note3 = parseInt(prompt("Ingresa tercera nota"))
+promedio = (note1 + note2 + note3) / 3
+if promedio > 90) {
+    console.log("Excelente")
+} else if (promedio >= 60) {
+    console.log("Aprobado")
+} else if (promedio < 60) {
+    console.log("Reprobado")
+}; */
 
 /*
 25. Pide nombre y edad.
@@ -543,31 +560,108 @@ switch (mesillo) {
    - Si tiene 60 o más, agrega también "y adulto mayor"
 */
 // RESPUESTA AQUÍ 👇
-
+/* let name = prompt("Ingresa tu nombre");
+let age = parseInt(prompt("Ingresa tu edad"));
+if (age >= 18) {
+    console.log("Hola ", name, "eres mayor de edad")
+    if (age >= 60) {
+        console.log("Hola", name, "eres mayor de edad y adulto mayor")
+    }
+} else {
+    console.log("Hola", name, "eres menor de edad")
+}; */
 /*
 26. Pide un número del 1 al 5 y usa switch para mostrar una calificación:
    1 = Muy malo, 2 = Malo, 3 = Regular, 4 = Bueno, 5 = Excelente.
 */
 // RESPUESTA AQUÍ 👇
-
+/* let number3 = parseInt(prompt("Ingresa un numero del 1 al 5"))
+switch (number3) {
+    case 1: 
+        console.log("Muy malo");
+        break;
+    case 2:
+        console.log("Malo");
+        break;
+    case 3:
+        console.log("Regular");
+        break;
+    case 4:
+        console.log("Bueno");
+        break;
+    case 5:
+        console.log("Excelente");
+        break;
+    default:
+        console.log("numero no valido");
+        break;
+} */
 /*
 27. Pide una letra y determina si es vocal o consonante usando switch.
 */
 // RESPUESTA AQUÍ 👇
-
+/* let letra = prompt("introduce una letra");
+switch (letra) {
+    case "a":
+        console.log("es una vocal");
+        break;
+    case "e":
+        console.log("es una vocal");
+        break;
+    case "i":
+        console.log("es una vocal");
+        break;
+    case "o":
+        console.log("es una vocal");
+        break;
+    case "u":
+        console.log("es una vocal");
+        break;
+    default:
+        console.log("es una consonante");
+        break;
+} */
 /*
 28. Pide dos números y una operación ("sumar", "restar", "multiplicar", "dividir").
    Usa switch para realizar la operación correspondiente.
 */
 // RESPUESTA AQUÍ 👇
-
+console.log("EJERCICIO 28")
+let number1 = parseInt(prompt("Ingresa el primer numero"));
+let number2 = parseInt(prompt("Ingresa el segundo numero"));
+let operacion = prompt(`Que operacion quieres realizar? 
+                        Suma
+                        Resta
+                        Multiplicacion
+                        Division`)
+switch (operacion.toLowerCase()) {
+    case "suma":
+        console.log("Resultado: ", number1 + number2);
+        break;
+    case "resta":
+        console.log("Resultado: ", number1 - number2);
+        break;
+    case "multiplicacion":
+        console.log("Resultado: ", number1 * number2);
+        break;
+    case "division":
+        console.log("Resultado: ", number1 / number2);
+        break;
+    default:
+        console.log("operacion no reconocida");
+        break;
+}
 /*
 29. Pide edad y país.
    Si el país es "Bolivia" y la edad es mayor o igual a 18, muestra "Puede votar".
    Caso contrario, muestra "No puede votar".
 */
 // RESPUESTA AQUÍ 👇
-
+let nombrePais ="Bolivia";
+let cantidadLetras =nombrePais.length; //CANTIDAD DE LETRAS
+let letrita = nombrePais[0]; //devuelve la letra segun su posicon
+console.log(letrita);
+console.log(cantidadLetras);
 /*
 30. Pide tres números.
    Determina cuál es el mayor de los tres usando if-else-if.
