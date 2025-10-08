@@ -64,7 +64,7 @@ if (edad < 18) {
 }  else if (estudiante.toLowerCase() == "si") {
     subtotal = precio * 0.75
     console.log(`Tu descuento por ser estudiante es del 25%. Subtotal: ${subtotal.toFixed(2)}`)
-    }
+}
 else {
     subtotal = precio;
     console.log(`No tienes descuentos. Subtotal: ${subtotal.toFixed(2)}`);
