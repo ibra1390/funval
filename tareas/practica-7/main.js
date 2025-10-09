@@ -9,7 +9,7 @@ Usa condicional para verificar que base y altura sean mayores que 0.
 
 Muestra cada área en consola. */
 
-/* console.log("Ejercicio 1: Area de triangulos multiples");
+console.log("Ejercicio 1: Area de triangulos multiples");
 
 for (let i = 1; i <=3; i++) {
     let base = parseFloat(prompt(`Ingresa la base del triangulo ${i}`));
@@ -32,7 +32,7 @@ for (let i = 1; i <=3; i++) {
 function calcularAreaTriangulo(base,altura) {
     let area = (base * altura) / 2
     return area;
-} */
+}
 
 
 /* Ejercicio 2 – Conversión de Celsius a Fahrenheit
@@ -59,37 +59,89 @@ return conversion;
 };
 
 
-/* let resultado = 0;
+/* Ejercicio 3 – Contar vocales en un texto
+Crea una función contarVocales que reciba un texto y devuelva el número de vocales:
+Pide al usuario 3 textos mediante prompt.
+Usa un bucle para recorrer cada letra del texto.
+Usa condicionales para determinar si un carácter es vocal.
+Muestra en consola cuántas vocales tiene cada texto. */
 
-let opcion = parseInt(prompt
-    (`Selecciona el numero de la conversion que deseas realizar
-        OPCIONES
-    (1) Convertir de Celsius a Fahrenheit
-    (2) Convertir de Fahrenheit a Celsius
-    (3) Convertir de Metros a Kilómetros
-    (4) Convertir de Kilómetros a Metros 
-    `));
-let valor = parseFloat(prompt("Escribe el valor a convertir"));
+console.log("Ejercicio 3: Contar vocales en un texto");
 
-switch (opcion) {
-    case 1:
-        resultado = (valor * 9/5) + 32;
-        console.log(`${valor}°C equivale a ${resultado.toFixed(2)}°F`);
-        break;
-    case 2:
-        resultado = (valor -32) * 5/9;
-        console.log(`${valor}°F equivale a ${resultado.toFixed(2)}°C`);
-        break;
-    case 3:
-        resultado = valor / 1000;
-        console.log(`${valor}m equivale a ${resultado.toFixed(2)}km`);
-        break;
-    case 4:
-        resultado = valor * 1000;
-        console.log(`${valor}km equivale a ${resultado.toFixed(2)}m`);
-        break;
-    default:
-        console.log("valor no reconocido");
-        break;
+for (let k = 1; k <=3; k++) {
+    let texto = prompt(`Ingresa el texto No. ${k}`);
+    console.log(`El texto ${texto} tiene ${contarVocales(texto)} vocales`);
 }
+
+function contarVocales(texto) {
+    let contador = 0;
+    let textoMinusculas = texto.toLowerCase();
+
+    for(let letra= 0; letra < textoMinusculas.length; letra++) {
+        if (textoMinusculas[letra] === "a" || textoMinusculas[letra] === "e" || textoMinusculas[letra] === "i" || textoMinusculas[letra] === "o" || textoMinusculas[letra] === "u") {
+            contador ++;
+        }
+    }
+    return contador;
+}
+
+
+/* Ejercicio 4 – Pares e impares en un rango
+Crea una función clasificarParesImpares que reciba dos números inicio y fin y:
+Use un bucle for para recorrer todos los números desde inicio hasta fin.
+Use condicional para imprimir si cada número es par o impar.
+Pide al usuario inicio y fin mediante prompt.
+Muestra el resultado en consola. */
+
+console.log("Ejercicio 4: Pares e impares en un rango");
+
+let inicio = parseInt(prompt("Ingresa un numero entero de inicio"));
+let fin = parseInt(prompt("Ingresa un numero entero de fin"));
+
+clasificarParesImpares(inicio, fin);
+
+function clasificarParesImpares(inicio, fin) {
+    for (let n = inicio; n <= fin; n++) {
+        if (n % 2 === 0) {
+            console.log(`${n} es par`);
+        } else {
+            console.log(`${n} es impar`);
+        }
+    };
+};
+
+/* Ejercicio 5 – Número mayor y suma
+Crea una función mayorYSuma que reciba 5 números separados y:
+Use un bucle para comparar cada número y encontrar el mayor.
+Use condicionales para verificar cuál es el mayor.
+Calcula también la suma de los 5 números.
+Pide al usuario los 5 números mediante prompt.
+Muestra en consola el número mayor y la suma total.
  */
+console.log("Ejercicio 5: Numero mayor y suma");
+
+function mayorYSuma() {
+    let sum = 0;
+    let mayor;
+
+    for (x = 1; x <= 5; x++) {
+        let num = parseFloat(prompt(`Ingresa el numero ${x}`));
+        if (isNaN(num)) {
+            alert("Ese no es un numero!");
+            num = parseFloat(prompt(`Ingresa nuevamente el numero ${x}`));
+        }
+        sum += num;
+
+        if (x === 1) {
+            mayor = num;
+        } else if (num > mayor) {
+            mayor = num;
+        }
+    }
+
+    console.log(`La suma de los 5 numeros es: ${sum}`);
+    console.log(`El numero mayor es: ${mayor}`);
+}
+
+mayorYSuma();
+
