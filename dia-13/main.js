@@ -7,7 +7,7 @@
 */
 // RESPUESTA AQUÍ 👇
 console.log("ejercicio 1")
-for (let i=1; i <= 10; i++) { // for (inicialización; condición; incremento)
+for (let i=1; i <= 10; i++) { 
     console.log(i);
 }
 /*
@@ -61,7 +61,7 @@ console.log(`La suma es: ${suma}`)
 */
 // RESPUESTA AQUÍ 👇
 console.log("ejercicio 7")
-for (let i= 1; i <=30; i++) { //opcional i += 3
+for (let i= 1; i <=30; i++) { 
    if (i % 3 == 0) {
       console.log(i)
    }
@@ -108,7 +108,7 @@ for (let i=1; i<=50; i++) {
 // RESPUESTA AQUÍ 👇
 console.log("ejercicio 11")
 let sumaPares = 0;
-for (let i=1; i <=50; i++) { //opcional i += 2
+for (let i=1; i <=50; i++) { 
    if (i % 2 == 0) {
       sumaPares += i;
    } 
@@ -120,7 +120,7 @@ console.log(`La suma de los numeros pares del 1 al 50 es: ${sumaPares}`)
 // RESPUESTA AQUÍ 👇
 console.log("ejercicio 12")
 let sumaImpares = 0;
-for (let i=1; i <=50; i++) { //opcional i += 2
+for (let i=1; i <=50; i++) { 
    if (i % 2 != 0) {
       sumaImpares += i;
    } 
@@ -213,9 +213,9 @@ let j= 1;
 let sumaNumeros = 0;
 while (j <= 20) {
    sumaNumeros += j;
-   console.log(sumaNumeros);
    j++;
 }
+console.log(`La suma del 1 al 20 es: ${sumaNumeros}`);
 
 /*
 21. Muestra los números del 1 al 15 e indica si son pares o impares usando while.
@@ -295,13 +295,14 @@ do {
 */
 // RESPUESTA AQUÍ 👇
 console.log("ejercicio 27")
-let numResp = parseInt(prompt("Ingresa un numero"))
+/* let numResp = parseInt(prompt("Ingresa un numero"))
 let c = 1;
 console.log(`Tabla de multiplicar del ${numResp}:`)
 do {
    console.log(`${numResp} x ${c} = ${numResp * c}`)
    c++
-} while (c <= 10);
+} while (c <= 10); */
+
 /*
 28. Muestra los números del 10 al 1 usando do...while.
 */
@@ -350,23 +351,34 @@ console.log(`La suma del 1 al 50 es ${sumas}`)
 // RESPUESTA AQUÍ 👇
 console.log("ejercicio 31");
 
-let num2 = parseInt(prompt("Introduce un numero"));
+/* let num2 = parseInt(prompt("Introduce un numero"));
 
 for (let d = 1; d <= num2; d++) {
-   if (d % 3 == 0) {
-      console.log("Fizz");
-   } else if (d % 5 == 0) {
-      console.log("Buzz")
-   } else {
-      console.log(d);
-   };
-}
+  if (d % 3 === 0) {
+    console.log("Fizz");
+  } else if (d % 5 === 0) {
+    console.log("Buzz");
+  } else {
+    console.log(d);
+  }
+} */
+
+
 /*
 32. Pide al usuario un número y calcula su factorial usando un bucle.
 */
 // RESPUESTA AQUÍ 👇
+console.log("Ejercicio 32");
 
-/*
+/* let factor = 1;
+
+let n = parseInt(prompt("Ingresa el numero del que quieras obtener su factorial"));
+for (let i=1; i <=n; i++) {
+    factor *= i;
+}
+ console.log(`El factorial de ${n} es ${factor}`);*/
+
+ /*
 33. Pide nombre de usuario y contraseña.
    Si usuario es "Kevin" o "Belen" y contraseña es "1234",
    muestra "Acceso autorizado", de lo contrario "Denegado".
@@ -374,15 +386,17 @@ for (let d = 1; d <= num2; d++) {
 // RESPUESTA AQUÍ 👇
 console.log("Ejercicio 33");
 
-let usuario = prompt("Ingresa tu usuario");
+/* let usuario = prompt("Ingresa tu usuario");
 let password = prompt("Ingresa tu password")
 
-if ((usuario == "Kevin" || usuario == "Belen") && password == "1234") {
-   console.log("Acceso autorizado")
-} else {
+while ((usuario.toLowerCase() != "kevin" && usuario.toLowerCase() != "belen") || password != "1234") {
    console.log("Acceso denegado")
-};
+   usuario = prompt("Ingresa tu usuario");
+   password = prompt("Ingresa tu password");
+} 
 
+console.log("Acceso autorizado");
+ */
 /*
 34. Pide un número y muestra todos los pares hasta ese número.
    Luego muestra la cantidad total de pares encontrados.
@@ -390,7 +404,7 @@ if ((usuario == "Kevin" || usuario == "Belen") && password == "1234") {
 // RESPUESTA AQUÍ 👇
 console.log("Ejercicio 34");
 
-let total = 0;
+/* let total = 0;
 let number = parseInt(prompt("Ingresa un numero entero"));
 for (let w = 1; w <= number; w++) {
    if (w % 2 == 0) {
@@ -398,16 +412,38 @@ for (let w = 1; w <= number; w++) {
       total++;
    }
 }
-console.log(`Cantidad total de pares: ${total}`);
+console.log(`Cantidad total de pares: ${total}`); */
+
 /*
 35. Calcula la suma de todos los múltiplos de 3 y 5 entre 1 y 100.
 */
 // RESPUESTA AQUÍ 👇
-
+console.log("Ejercicio 35");
+let sum = 0;
+for (let multi = 1; multi <= 100; multi++) {
+   if (multi % 3 == 0 || multi % 5 == 0) {
+      sum += multi
+   }
+}
+console.log(`La suma de todos los multiplos de 3 y 5 es: ${sum} `)
 /*
 36. Pide un número y muestra si es primo o no, usando un bucle para verificar divisores.
 */
 // RESPUESTA AQUÍ 👇
+console.log("Ejercicio 36");
+/* let primo = parseInt(prompt("Ingresa un numero"));
+let divisores = 0;
+
+for (let div = 1; div <= primo; div++) {
+   if ( primo % div == 0) {
+      divisores++;
+   }
+}
+if (divisores === 2) {
+  console.log(`El número ${primo} es primo`);
+} else {
+  console.log(`El número ${primo} no es primo`);
+} */
 
 /*
 37. Simula un inicio de sesión:
@@ -415,11 +451,44 @@ console.log(`Cantidad total de pares: ${total}`);
    Si falla los 3 intentos, muestra "Acceso bloqueado".
 */
 // RESPUESTA AQUÍ 👇
+console.log("Ejercicio 37");
+
+/* let intentos = 0;
+
+do {
+   let user = prompt("ingresa tu usuario");
+   let pass = prompt("ingresa tu password");
+   if (user.toLowerCase() == "admin" && pass == "1234") {
+      console.log("Acceso concedido")
+      break;
+   } else {
+      console.log("Acceso denegado")
+      intentos ++;
+   }
+} while (intentos < 3);
+
+if (intentos == 3) {
+   console.log("Acceso bloqueado");
+} */
 
 /*
 38. Pide 5 números y calcula su suma total y promedio.
 */
 // RESPUESTA AQUÍ 👇
+console.log("Ejercicio 38");
+
+/* let sumaTotal = 0; 
+
+for (let answer = 1; answer <= 5; answer ++) {
+   let n1 = parseFloat(prompt(`ingresa el numero ${answer}`));
+   sumaTotal += n1;
+}
+
+let promedio = sumaTotal / 5;
+
+console.log(`La suma total es: ${sumaTotal}`)
+console.log(`El promedio es: ${promedio.toFixed(2)}`); */
+
 
 /*
 39. Muestra los números del 1 al 50.
@@ -428,6 +497,19 @@ console.log(`Cantidad total de pares: ${total}`);
    si es divisible por ambos muestra "FizzBuzz".
 */
 // RESPUESTA AQUÍ 👇
+console.log("Ejercicio 39");
+
+for (let k = 1; k <= 50; k++) {
+   if (k % 3 == 0 && k % 5 == 0) {
+      console.log("FizzBuzz");
+   } else if (k % 3 == 0) {
+      console.log("Fizz");
+   } else if (k % 5 == 0) {
+      console.log("Buzz");
+   } else {
+      console.log(k);
+   }
+};
 
 /*
 40. Juego de adivinar número:
@@ -437,3 +519,17 @@ console.log(`Cantidad total de pares: ${total}`);
    El juego termina cuando adivina.
 */
 // RESPUESTA AQUÍ 👇
+console.log("Ejercicio 40");
+
+let random = Math.floor((Math.random()) * 10 + 1);
+let respuesta = "";
+do {
+   respuesta = parseInt(prompt("Adivina un numero random del 1 al 10"));
+   if (respuesta > random) {
+      alert("El numero debe ser menor, intenta de nuevo.");
+   } else if (respuesta < random) {
+      alert("El numero debe ser mayor, intenta de nuevo.");
+   }
+} while (random != respuesta);
+alert("Adivinaste!");
+
