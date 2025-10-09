@@ -521,7 +521,7 @@ for (let k = 1; k <= 50; k++) {
 // RESPUESTA AQUÍ 👇
 console.log("Ejercicio 40");
 
-let random = Math.floor((Math.random()) * 10 + 1);
+/* let random = Math.floor((Math.random()) * 10 + 1);
 let respuesta = "";
 do {
    respuesta = parseInt(prompt("Adivina un numero random del 1 al 10"));
@@ -532,4 +532,4 @@ do {
    }
 } while (random != respuesta);
 alert("Adivinaste!");
-
+ */
