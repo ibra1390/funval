@@ -348,7 +348,19 @@ console.log(`La suma del 1 al 50 es ${sumas}`)
    Si es múltiplo de 3, muestra "Fizz", si es múltiplo de 5, muestra "Buzz".
 */
 // RESPUESTA AQUÍ 👇
+console.log("ejercicio 31");
 
+let num2 = parseInt(prompt("Introduce un numero"));
+
+for (let d = 1; d <= num2; d++) {
+   if (d % 3 == 0) {
+      console.log("Fizz");
+   } else if (d % 5 == 0) {
+      console.log("Buzz")
+   } else {
+      console.log(d);
+   };
+}
 /*
 32. Pide al usuario un número y calcula su factorial usando un bucle.
 */
@@ -360,13 +372,33 @@ console.log(`La suma del 1 al 50 es ${sumas}`)
    muestra "Acceso autorizado", de lo contrario "Denegado".
 */
 // RESPUESTA AQUÍ 👇
+console.log("Ejercicio 33");
+
+let usuario = prompt("Ingresa tu usuario");
+let password = prompt("Ingresa tu password")
+
+if ((usuario == "Kevin" || usuario == "Belen") && password == "1234") {
+   console.log("Acceso autorizado")
+} else {
+   console.log("Acceso denegado")
+};
 
 /*
 34. Pide un número y muestra todos los pares hasta ese número.
    Luego muestra la cantidad total de pares encontrados.
 */
 // RESPUESTA AQUÍ 👇
+console.log("Ejercicio 34");
 
+let total = 0;
+let number = parseInt(prompt("Ingresa un numero entero"));
+for (let w = 1; w <= number; w++) {
+   if (w % 2 == 0) {
+      console.log(w);
+      total++;
+   }
+}
+console.log(`Cantidad total de pares: ${total}`);
 /*
 35. Calcula la suma de todos los múltiplos de 3 y 5 entre 1 y 100.
 */
