@@ -64,7 +64,7 @@ for (let x = 1; x <= num; x++) {
 // RESPUESTA AQUÍ 👇
 
 console.log("Ejercicio 3");
-let number = prompt("Ingresa un numero");
+let number = prompt("Ingresa un numero para sumar sus digitos");
 let sum = 0;
 
 for (let j = 0; j < number.length; j++) {
@@ -86,7 +86,7 @@ console.log(`La suma de los digitos es ${sum}`);
 // RESPUESTA AQUÍ 👇
 
 console.log("Ejercicio 4");
-let resp = (prompt("ingresa un numero"));
+let resp = (prompt("ingresa un numero para invertirlo"));
 let nuevoNumero = "";
 
 for (let digito = resp.length -1; digito >= 0; digito--) {
