@@ -10,7 +10,7 @@
    - Muestra cada número con console.log().
 */
 // RESPUESTA AQUÍ 👇
-/* console.log("Ejercicio 1");
+console.log("Ejercicio 1");
 let n = parseInt(prompt("Ingresa un numero para mostrar la serie de Fibonacci"));
 let num1 = 0;
 let num2 = 1;
@@ -20,7 +20,7 @@ for (let i = 0; i < n; i++) {
    let num3 = num1 + num2;
    num1 = num2;
    num2 = num3;
-} */
+}
 
 
 /*
@@ -63,6 +63,16 @@ for (let x = 1; x <= num; x++) {
 */
 // RESPUESTA AQUÍ 👇
 
+console.log("Ejercicio 3");
+let number = prompt("Ingresa un numero");
+let sum = 0;
+
+for (let j = 0; j < number.length; j++) {
+   sum += parseInt(number[j]);
+}
+
+console.log(`La suma de los digitos es ${sum}`);
+
 /*
 4. Invertir un Número
    Pide al usuario un número y muestra su versión invertida.
@@ -74,6 +84,18 @@ for (let x = 1; x <= num; x++) {
    - Construye el número invertido y muéstralo en consola.
 */
 // RESPUESTA AQUÍ 👇
+
+console.log("Ejercicio 4");
+let resp = (prompt("ingresa un numero"));
+let nuevoNumero = "";
+
+for (let digito = resp.length -1; digito >= 0; digito--) {
+   nuevoNumero = nuevoNumero + resp[digito];
+}
+
+console.log(nuevoNumero);
+ 
+
 
 /*
 5. Número Perfecto
@@ -88,3 +110,20 @@ for (let x = 1; x <= num; x++) {
    - Muestra un mensaje indicando si es perfecto o no.
 */
 // RESPUESTA AQUÍ 👇
+
+console.log("Ejercicio 5");
+let numPerfecto = parseInt(prompt("ingresa un numero para ver si es perfecto o no"));
+
+let sumNumeros = 0;
+
+for (let y = 1; y < numPerfecto; y++) {
+   if (numPerfecto % y === 0) {
+      sumNumeros += y;
+   } 
+}
+
+if (sumNumeros === numPerfecto) {
+   alert("Es un numero perf10ecto");
+} else {
+   alert("No es un numero perfecto");
+}
