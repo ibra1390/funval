@@ -10,6 +10,18 @@
    - Muestra cada número con console.log().
 */
 // RESPUESTA AQUÍ 👇
+/* console.log("Ejercicio 1");
+let n = parseInt(prompt("Ingresa un numero para mostrar la serie de Fibonacci"));
+let num1 = 0;
+let num2 = 1;
+
+for (let i = 0; i < n; i++) {
+   console.log(num1);
+   let num3 = num1 + num2;
+   num1 = num2;
+   num2 = num3;
+} */
+
 
 /*
 2. Números Primos
@@ -22,6 +34,22 @@
    - Usa if para verificar divisibilidad.
 */
 // RESPUESTA AQUÍ 👇
+console.log("Ejercicio 2");
+let num = parseInt(prompt("Ingresa un numero para mostrar los numeros primos"));
+
+for (let x = 1; x <= num; x++) {
+   let primo = true;
+   for (let divisor=2; divisor <= x-1; divisor++) {
+      if ( x % divisor ===0) {
+         primo = false;
+      }
+   }
+   if (primo && x > 1) {
+      console.log(x);
+   }
+}
+
+
 
 /*
 3. Suma de Dígitos
