@@ -3,10 +3,76 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./output.css">
     <script src="./main.js" defer></script>
     <title>Practica 8</title>
 </head>
-<body>
+<body class="bg-gray-100 flex flex-col items-center py-12 min-h-screen">
+    <!-- EJERCICIO 1 tarjetas -->
+    <div class="flex flex-col w-11/12 max-w-4xl mt-10 space-y-6">
+        <h1 class="text-2xl font-bold">Ejercicio 1: Tarjetas de Usuario</h1>
+        <div id="tarjeta" class="grid grid-cols-2 gap-6"></div>
+        <button id="btn" class="bg-slate-900 text-white p-4 rounded-2xl self-start">
+            Agregar tarjeta de usuario
+        </button>
+    </div>
+
+    <!-- EJERCICIO 2 tabla de productos -->
+    <div class="flex flex-col w-11/12 max-w-4xl mt-10 space-y-6">
+        <h1 class="text-2xl font-bold">Ejercicio 2: Tabla de Productos</h1>
+        <div class="relative overflow-x-auto">
+            <table class="w-full text-sm text-left text-gray-700 bg-white border border-gray-200 rounded-md">
+                <thead class="text-xs text-gray-700 uppercase bg-gray-50">
+                    <tr>
+                        <th class="px-6 py-3">Nombre</th>
+                        <th class="px-6 py-3">Precio</th>
+                        <th class="px-6 py-3">Stock</th>
+                        <th class="px-6 py-3">Marca</th>
+                        <th class="px-6 py-3">Categoria</th>
+                        <th class="px-6 py-3">Color</th>
+                    </tr>
+                </thead>
+                <tbody id="cuerpo-tabla"></tbody>
+            </table>
+        </div>
+        <button id="btn2" class="bg-red-700 text-white p-4 rounded-2xl self-start mt-4">
+            Agregar producto
+        </button>
+    </div>
+
+    <!-- EJERCICIO 3 lista de tareas -->
+    <div class="flex flex-col w-11/12 max-w-4xl mt-10 space-y-6">
+        <h1 class="text-2xl font-bold">Ejercicio 3: Lista de Tareas</h1>
+        <ul id="lista-tareas" class="space-y-4"></ul>
+        <button id="btn3" class="bg-purple-700 text-white p-4 rounded-2xl self-start mt-2">
+            Agregar tarea
+        </button>
+    </div>
+
+    <!-- EJERCICIO 4 tabla de estudiantes -->
+    <div class="flex flex-col w-11/12 max-w-4xl mt-10 space-y-6">
+        <h1 class="text-2xl font-bold">Ejercicio 4: Tabla de Estudiantes</h1>
+        <div class="relative overflow-x-auto">
+            <table class="w-full text-sm text-left text-gray-700 bg-white border border-gray-200 rounded-md">
+                <thead class="text-xs text-gray-700 uppercase bg-gray-50">
+                    <tr>
+                        <th class="px-6 py-3">Nombre</th>
+                        <th class="px-6 py-3">Edad</th>
+                        <th class="px-6 py-3">Promedio</th>
+                    </tr>
+                </thead>
+                <tbody id="cuerpo-tabla-estudiantes"></tbody>
+            </table>
+        </div>
+        <button id="btn-estudiante" class="bg-red-500 text-white p-4 rounded-2xl self-start mt-4 border-4 border-yellow-400">
+            Agregar estudiante
+        </button>
+    </div>
     
+    <!-- EJERCICIO 5 configuración de app -->
+    <div class="flex flex-col w-11/12 max-w-4xl space-y-6">
+        <h1 class="text-2xl font-bold">Ejercicio 5: Configuración de App</h1>
+        <div id="config-app"></div>
+    </div>
 </body>
 </html>
