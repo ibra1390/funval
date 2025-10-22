@@ -89,7 +89,21 @@ const getUsuarios = new Promise((resolve, reject) => {
   }, 1200);
 });
 
+async function traerPromesa() {
+  try {
+    let respuesta = await getUsuarios;
+    console.log(respuesta);
+  } catch(error) {
+    console.log(error);
+  }
+}
+
+traerPromesa()
+
 // 4. Promesa que retorna un array de cursos
+let contenedor = document.querySelector("#contenedor-curso");
+let botoncito = document.querySelector("#btn");
+
 const getCursos = new Promise((resolve) => {
   setTimeout(() => {
     const cursos = [
@@ -99,6 +113,27 @@ const getCursos = new Promise((resolve) => {
     ];
     resolve(cursos);
   }, 800);
+});
+
+botoncito.addEventListener("click", async(e) => {
+  try {
+    contenedor.innerHTML = "";
+    let respuesta2 = await getCursos;
+    contenedor.classList.replace("h-96", "grid");
+    contenedor.classList.add(
+      "grid-col-1",
+      "md:grid-cols-2",
+      "gap-4",
+      "p-8"
+    );
+    respuesta2.forEach(({codigo, nombre})=> {
+        contenedor.innerHTML = `
+        `;
+    });
+    console.log(respuesta2);
+  } catch (error) {
+    console.log(error);
+  }
 });
 
 // 5. Promesa que retorna un array de tareas

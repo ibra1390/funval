@@ -65,7 +65,7 @@ let estudiantes = [
 /* aprender a crear una promesa */
 const promesaEstudiantes = new Promise((resolve, reject) => {
   setTimeout(() => {
-    let resuelto = true;
+    let resuelto = false;
     if (resuelto) {
       resolve(estudiantes);
     } else {
@@ -74,10 +74,25 @@ const promesaEstudiantes = new Promise((resolve, reject) => {
   }, 3000);
 });
 let contenedor = document.querySelector("#container");
+
+for (let i = 1; i <= 4; i++) {
+  contenedor.innerHTML += `
+  <a href="#" class="block max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow-sm hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
+    <div role="status" class="max-w-sm animate-pulse">
+        <div class="h-2.5 bg-gray-200 rounded-full dark:bg-gray-700 w-48 mb-4"></div>
+        <div class="h-2 bg-gray-200 rounded-full dark:bg-gray-700 max-w-[360px] mb-2.5"></div>
+        <div class="h-2 bg-gray-200 rounded-full dark:bg-gray-700 mb-2.5"></div>
+        <div class="h-2 bg-gray-200 rounded-full dark:bg-gray-700 max-w-[330px] mb-2.5"></div>
+        <span class="sr-only">Loading...</span>
+    </div>
+  </a>
+`;
+}
+
 /* -----CONSUME UNA PROMESA--- */
 promesaEstudiantes
   .then((respuesta) => {
-    console.log(respuesta);
+    contenedor.innerHTML = "";
     respuesta.forEach(({ nombre, materia, nota }) => {
       contenedor.innerHTML += `
 <a href="#" class="block max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow-sm hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
@@ -89,7 +104,14 @@ promesaEstudiantes
     });
   })
   .catch((err) => {
-    console.log(err);
+    contenedor.innerHTML = "";
+    for (let i = 1; i <= 4; i++) {
+      contenedor.innerHTML += `
+  <a href="#" class="block max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow-sm hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
+    <p class="font-normal text-gray-700 dark:text-gray-400">Error:MALA SEÑAL DE INTERNET</p>
+  </a>
+`;
+    }
   });
 /* 
 
