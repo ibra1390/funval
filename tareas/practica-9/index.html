@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./output.css">
+    <script src="./main.js" defer></script>
+    <title>Gestor de tareas</title>
+</head>
+<body class="min-h-screen bg-slate-800 p-4">
+    <div class="max-w-md mx-auto bg-gray-100 rounded-lg shadow p-6 mt-10">
+        <h1 class="text-2xl font-bold text-center mb-6">Mis Tareas</h1>
+
+        <!-- Agregar tarea -->
+         <div class="flex gap-2 mb-6">
+            <input 
+            type="text"
+            id="tareaInput"
+            placeholder="Nueva tarea..."
+            class="flex-1 border border-gray-300 rounded-lg px-3 py-2 focus:outline-none focus:border-blue-500"
+            >
+            <button id="agregarBtn" class="bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-blue-600">
+                Agregar
+            </button>
+         </div>
+         <!-- Filtros -->
+          <div class="flex gap-2 mb-4 justify-center">
+            <button class="filtro-todas bg-blue-500 text-white px-3 py-1 rounded">
+                Todas
+            </button>
+            <button class="filtro-pendientes bg-blue-200 px-3 py-1 rounded">
+                Pendientes
+            </button>
+            <button class="filtro-completadas bg-blue-200 px-3 py-1 rounded">
+                Completadas
+            </button>
+          </div>
+          <!-- Lista de tareas -->
+           <div id="listaTareas" class="space-y-2">
+            <!-- Tareas deben mostrarse aqui -->
+           </div>
+    </div>
+</body>
+</html>
