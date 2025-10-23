@@ -28,7 +28,7 @@ const productos = [
     nombre: "Mouse Logitech",
     precio: 120,
     categoria: "Accesorios",
-    imagen: "./images/mouse.jpg"
+    imagen: "./images/mouse.jpeg"
   },
   {
     id: 5,
@@ -42,7 +42,7 @@ const productos = [
     nombre: "iPhone 17 Pro Max 256GB",
     precio: 1400,
     categoria: "Telefonia",
-    imagen: "./images/iphone.jpg"
+    imagen: "./images/iphone.jpeg"
   },
   {
     id: 7,
@@ -71,6 +71,20 @@ const productos = [
     precio: 60,
     categoria: "Smart Home",
     imagen: "./images/camara.jpg"
+  },
+  {
+    id: 11,
+    nombre: "Laptop HP Victus 15",
+    precio: 2200,
+    categoria: "Computo",
+    imagen: "./images/laptopHP.jpg"
+  },
+  {
+    id: 12,
+    nombre: "Samsung Galaxy S25 Ultra",
+    precio: 1200,
+    categoria: "Telefonia",
+    imagen: "./images/s25.png"
   }
 ];
 
@@ -80,27 +94,20 @@ const promesaProductos = new Promise((resolve, reject) => {
         if (exito) {
             resolve(productos);
         } else {
-            reject("Error al cargar los productos, intenta más tarde.");
+            reject("Error al cargar los productos, intenta nuevamente.");
         }
     }, 2000);
 });
 
 async function traerPromesa() {
     try {
-        contenedor.innerHTML = "";
+        
         let respuesta = await promesaProductos;
-        contenedor.classList.replace("h-96", "grid");
-        contenedor.classList.add(
-            "grid-col-1",
-            "md:grid-cols-2",
-            "place-items-center",
-            "gap-4",
-            "p-8"
-        );
+        contenedor.innerHTML = "";
         respuesta.forEach(({id, nombre, precio, categoria, imagen}) => {
         contenedor.innerHTML += `
             <div class="bg-white border border-gray-200 rounded-lg shadow-sm p-6 hover:shadow-md transition-shadow">
-                <div class="h-40 bg-gray-100 rounded-lg mb-4 flex items-center justify-center overflow-hidden">
+                <div class="h-48 sm:h-64 w-full bg-gray-100 rounded-lg mb-4 flex items-center justify-center overflow-hidden">
                     <img src="${imagen}" alt="${nombre}" class="h-full w-full object-cover">
                 </div>
                 <span class="inline-block bg-blue-100 text-blue-800 text-xs px-2 py-1 rounded mb-2">${categoria}</span>
@@ -113,8 +120,27 @@ async function traerPromesa() {
         `;
 });
     } catch (error) {
-        contenedor.innerHTML = "";
+    contenedor.innerHTML = `
+    <div class="col-span-full text-center p-8">
+        <div class="bg-red-100 border border-red-400 text-red-700 p-12 rounded-lg inline-block">
+            <p class="font-semibold">❌ ${error}</p>
+            <button onclick="location.reload()" class="mt-2 text-red-600 hover:text-red-800 underline cursor pointer">
+                Recargar página
+            </button>
+        </div>
+    </div>
+    `;
     }
 };
+
+filtroInput.addEventListener("input", (e) => {
+    let buscar = e.target.value.toLowerCase();
+    
+    document.querySelectorAll("#productos-container > div").forEach(producto => {
+        let texto = producto.textContent.toLowerCase();
+        producto.hidden = !texto.includes(buscar);
+    });
+});
+
 
 traerPromesa();
